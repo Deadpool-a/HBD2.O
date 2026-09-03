@@ -16,8 +16,18 @@
         <button class="cta-button">Click to Enter The World 💕</button>
     </div>
 
-    <script src="script.js">
-        
-    </script>
+    <!-- Background audio element (song.mp3 should be in the repo root or update the path) -->
+    <audio id="bg-audio" src="song.mp3" loop preload="auto"></audio>
+
+    <!-- Music consent button (shown on first visit or if browser blocks autoplay) -->
+    <div id="music-consent-wrapper">
+        <button id="music-consent" class="music-button">Play Background Music</button>
+        <button id="music-decline" class="music-button">No Thanks</button>
+    </div>
+
+    <!-- Small toggle shown after consent so user can mute/unmute on any page -->
+    <button id="music-toggle" class="music-toggle" aria-pressed="false">Music: Off</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
